@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MovieApp</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- navbar  -->
+    <nav class="navbar">
+      <div class="nav-logo">
+       <a href="/"><img src="/assest/logo.png" alt="MovieApp Logo" height="30" />
+        </a> 
+      </div>
+      <div class="nav-button">
+        <a href="favorites.html"><img src="/assest/fav.png" alt="favorite icon" height="30" /></a>
+        <a href="cart.html"><img src="/assest/icons8-cart.gif" alt="cart icon" height="30" /></a>
+      </div>
+    </nav>
+
+    <section class="carousal-section" id="home">
+      <div class="carousal-container" id="carousal-container"></div>
+      <button class="carousal-btn prev">Pre</button>
+      <button class="carousal-btn next">Next</button>
+    </section>
+
+    <!-- movie section -->
+
+    <section class="movie-section1movies">
+      <div class="container">
+        <h2>Popular Movies</h2>
+        <div class="movie-grid" id="movie-grid"></div>
+      </div>
+    </section>
+
+    <h1>Welcome to MovieApp</h1>
+  </body>
+  <script src="index.js"></script>
+</html>
