@@ -54,45 +54,56 @@ body{
     background-color: #0056b3;
 }
 
-.carousal-section {
+.carousal-section{
+    margin: 32px 0;
+}
+.carousal-container{
+    max-width: 1200px;
+    margin: 0 auto;
     position: relative;
-    width: 100%;
     height: 400px;
     overflow: hidden;
-    margin-bottom: 40px;
-}
+    border-radius: 15px;
 
-.carousal-container {
-    display: flex;
+}
+.carousal-slide{
+    position: absolute;
     width: 100%;
     height: 100%;
-    transition: transform 0.5s ease;
 }
-
-.carousal-btn {
+.carousal-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousal-btn{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0,0,0,0.5);
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
     border: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     cursor: pointer;
-    font-size: 18px;
-    z-index: 10;
+    font-size: 16px;
+    border-radius: 5px;
+    z-index: 100;
 }
-
 .carousal-btn.prev {
     left: 10px;
 }
-
 .carousal-btn.next {
     right: 10px;
 }
-
-.carousal-btn:hover {
-    background-color: rgba(0,0,0,0.8);
-}
+.carousal-slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .carousal-slide.active {
+    display: block;
+  }
 
 .movie-section1movies {
     padding: 20px;
